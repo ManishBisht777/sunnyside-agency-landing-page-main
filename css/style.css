@@ -1,0 +1,240 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+.navlinks {
+  display: flex;
+  gap: 2rem;
+}
+.navlinks a {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.contact a {
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  background: hsl(0deg, 0%, 100%);
+  color: hsl(167deg, 40%, 24%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.intro {
+  background: url("../images/desktop/image-header.jpg") no-repeat center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro h1 {
+  font-size: 3rem;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  margin-bottom: 4rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.features {
+  background: hsl(0deg, 0%, 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  width: 100%;
+}
+
+article {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem;
+  min-height: 100vh;
+}
+article h3 {
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: hsl(212deg, 27%, 19%);
+}
+article p {
+  color: hsl(232deg, 10%, 55%);
+  letter-spacing: 0.01rem;
+  line-height: 1.5rem;
+}
+article a {
+  color: hsl(212deg, 27%, 19%);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+article a::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 50%;
+  bottom: -0.1rem;
+  left: 0;
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(to right, rgba(255, 225, 0, 0.1), rgba(255, 225, 0, 0.7) 4%, rgba(255, 225, 0, 0.3));
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  z-index: -1;
+}
+
+.feature img {
+  width: 50%;
+}
+
+.cherry {
+  background: url("../images/desktop/image-graphic-design.jpg") no-repeat center/cover;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cherry h3 {
+  color: hsl(167deg, 40%, 24%);
+  font-size: 2rem;
+}
+.cherry p {
+  color: hsl(168deg, 34%, 41%);
+  width: 70%;
+  text-align: center;
+}
+
+.orange {
+  background: url("../images/desktop/image-photography.jpg") no-repeat center/cover;
+  justify-content: flex-end;
+  align-items: center;
+}
+.orange h3 {
+  color: hsl(212deg, 27%, 19%);
+  font-size: 2rem;
+}
+.orange p {
+  color: hsl(198deg, 62%, 26%);
+  width: 70%;
+  text-align: center;
+}
+
+.testimonials {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.testimonials h2 {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: hsl(210deg, 4%, 67%);
+  letter-spacing: 0.3rem;
+}
+
+.clients {
+  display: flex;
+  gap: 2rem;
+}
+
+.client {
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  color: hsl(213deg, 9%, 39%);
+}
+.client img {
+  width: 4rem;
+  border-radius: 50%;
+}
+.client p {
+  text-align: center;
+  line-height: 1.7rem;
+}
+.client h5 {
+  font-size: 1.125rem;
+  color: hsl(212deg, 27%, 19%);
+  font-family: "Fraunces", serif;
+  margin-bottom: -2rem;
+}
+.client h6 {
+  color: hsl(210deg, 4%, 67%);
+  font-size: 1rem;
+}
+
+.showcase {
+  display: flex;
+}
+.showcase img {
+  width: 25%;
+}
+
+footer {
+  background: hsl(168deg, 63%, 69%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 3rem;
+}
+footer ul {
+  display: flex;
+  gap: 2rem;
+}
+footer ul a {
+  color: hsl(168deg, 34%, 41%);
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+}/*# sourceMappingURL=style.css.map */
