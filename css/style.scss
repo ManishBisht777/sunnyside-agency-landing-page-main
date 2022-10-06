@@ -90,6 +90,7 @@ body {
 
 .features {
   background: $White;
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
 }
@@ -97,6 +98,7 @@ body {
 .feature {
   display: flex;
   width: 100%;
+  height: fit-content;
 }
 
 article {
@@ -106,7 +108,6 @@ article {
   justify-content: center;
   gap: 2rem;
   padding: 5rem;
-  min-height: 100vh;
 
   h2 {
     font-family: "Fraunces", serif;
@@ -162,6 +163,7 @@ article {
     center/cover;
   justify-content: flex-end;
   align-items: center;
+  min-height: 50vh;
   h2 {
     color: $Darkdesaturatedcyan;
     font-size: 2rem;
@@ -178,6 +180,8 @@ article {
     center/cover;
   justify-content: flex-end;
   align-items: center;
+  min-height: 80vh;
+
   h2 {
     color: $Verydarkdesaturatedblue;
     font-size: 2rem;
