@@ -90,7 +90,6 @@ body {
 
 .features {
   background: $White;
-  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
 }
@@ -109,7 +108,7 @@ article {
   padding: 5rem;
   min-height: 100vh;
 
-  h3 {
+  h2 {
     font-family: "Fraunces", serif;
     font-size: 3rem;
     font-weight: 900;
@@ -163,7 +162,7 @@ article {
     center/cover;
   justify-content: flex-end;
   align-items: center;
-  h3 {
+  h2 {
     color: $Darkdesaturatedcyan;
     font-size: 2rem;
   }
@@ -179,7 +178,7 @@ article {
     center/cover;
   justify-content: flex-end;
   align-items: center;
-  h3 {
+  h2 {
     color: $Verydarkdesaturatedblue;
     font-size: 2rem;
   }
@@ -234,13 +233,13 @@ article {
     text-align: center;
     line-height: 1.7rem;
   }
-  h5 {
+  h3 {
     font-size: 1.125rem;
     color: $Verydarkdesaturatedblue;
     font-family: "Fraunces", serif;
     margin-bottom: -2rem;
   }
-  h6 {
+  h4 {
     color: $Grayishblue;
     font-size: 1rem;
   }

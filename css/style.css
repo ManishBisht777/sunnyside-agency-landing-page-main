@@ -74,7 +74,6 @@ body {
 
 .features {
   background: hsl(0deg, 0%, 100%);
-  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
 }
@@ -93,7 +92,7 @@ article {
   padding: 5rem;
   min-height: 100vh;
 }
-article h3 {
+article h2 {
   font-family: "Fraunces", serif;
   font-size: 3rem;
   font-weight: 900;
@@ -141,7 +140,7 @@ article a::before {
   justify-content: flex-end;
   align-items: center;
 }
-.cherry h3 {
+.cherry h2 {
   color: hsl(167deg, 40%, 24%);
   font-size: 2rem;
 }
@@ -156,7 +155,7 @@ article a::before {
   justify-content: flex-end;
   align-items: center;
 }
-.orange h3 {
+.orange h2 {
   color: hsl(212deg, 27%, 19%);
   font-size: 2rem;
 }
@@ -209,13 +208,13 @@ article a::before {
   text-align: center;
   line-height: 1.7rem;
 }
-.client h5 {
+.client h3 {
   font-size: 1.125rem;
   color: hsl(212deg, 27%, 19%);
   font-family: "Fraunces", serif;
   margin-bottom: -2rem;
 }
-.client h6 {
+.client h4 {
   color: hsl(210deg, 4%, 67%);
   font-size: 1rem;
 }
