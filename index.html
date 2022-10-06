@@ -22,6 +22,15 @@
   <body>
     <nav>
       <img src="./images/logo.svg" alt="" />
+      <button
+        class="hamburger"
+        id="togglemenu"
+        aria-expanded="false"
+        aria-label="toggle-menu"
+        onclick="ToggleMenu()"
+      >
+        <img src="./images/icon-hamburger.svg" alt="" />
+      </button>
       <ul class="navlinks">
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
@@ -44,6 +53,7 @@
           </p>
           <a href="#"> Learn more </a>
         </article>
+
         <img src="./images/desktop/image-transform.jpg" alt="" />
       </div>
 
@@ -133,5 +143,19 @@
         <img src="./images/icon-pinterest.svg" alt="" />
       </div>
     </footer>
+
+    <script>
+      function ToggleMenu() {
+        var AriaStauts = document
+          .getElementById("togglemenu")
+          .getAttribute("aria-expanded");
+        if (AriaStauts == "true") AriaStauts = "false";
+        else AriaStauts = "true";
+
+        document
+          .getElementById("togglemenu")
+          .setAttribute("aria-expanded", AriaStauts);
+      }
+    </script>
   </body>
 </html>

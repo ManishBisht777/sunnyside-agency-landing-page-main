@@ -47,6 +47,12 @@ body {
   font-weight: 600;
 }
 
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+}
+
 .intro {
   background: url("../images/desktop/image-header.jpg") no-repeat center/cover;
   min-height: 100vh;
@@ -167,6 +173,8 @@ article a::before {
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  padding: 2rem;
+  flex-wrap: wrap;
 }
 .testimonials h2 {
   font-family: "Fraunces", serif;
@@ -180,6 +188,8 @@ article a::before {
 .clients {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .client {
@@ -237,4 +247,87 @@ footer ul a {
 .socials {
   display: flex;
   gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 2rem 1rem;
+  }
+  .hamburger[aria-expanded=false] + .navlinks {
+    display: none;
+  }
+  .navlinks {
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    right: 1rem;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+  }
+  .navlinks a {
+    color: hsl(232deg, 10%, 55%);
+  }
+  .navlinks::after {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    right: 0rem;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #fff;
+    border-left: 30px solid transparent;
+  }
+  .contact a {
+    background: hsl(51deg, 100%, 49%);
+    color: hsl(212deg, 27%, 19%);
+    padding: 0.7rem 1.2rem;
+  }
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .feature {
+    flex-direction: column-reverse;
+  }
+  .feature article,
+.feature img {
+    width: 100%;
+  }
+  article {
+    padding: 2rem;
+    align-items: center;
+  }
+  article h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  article p {
+    text-align: center;
+  }
+  .intro {
+    background: url("../images/mobile/image-header.jpg") no-repeat center/cover;
+    background-position: bottom;
+  }
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .feature:nth-child(2) {
+    flex-direction: column;
+  }
+  .testimonials h2 {
+    text-align: center;
+  }
+  .client {
+    width: 15rem;
+  }
+  .showcase {
+    flex-wrap: wrap;
+  }
+  .showcase img {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
